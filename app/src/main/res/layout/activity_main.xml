@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/lwidth3"
+    android:layout_height="@dimen/lwidth3"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="@dimen/lwidth3"
+        android:layout_height="@dimen/final_income"
+        android:padding="@dimen/padding"
+        android:text="@string/view_notification"
+        android:textColor="@color/theme"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/messageTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="@string/not_msg"
+        android:textColor="@color/theme"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/closeButton"
+        android:layout_width="@dimen/income"
+        android:layout_height="@dimen/ivalue"
+        android:layout_gravity="center_horizontal"
+        android:backgroundTint="@color/delete"
+        android:padding="16dp"
+        android:text="@string/close_"
+        android:textColor="@color/white" />
+
+
+</LinearLayout>

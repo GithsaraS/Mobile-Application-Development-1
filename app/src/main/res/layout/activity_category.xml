@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+   <ImageButton
+       android:id="@+id/bill_icon"
+       android:layout_width="83dp"
+       android:layout_height="83dp"
+       android:layout_marginStart="88dp"
+       android:layout_marginEnd="84dp"
+       android:layout_marginBottom="60dp"
+       android:backgroundTint="@color/white"
+       android:contentDescription="@string/add_health"
+       android:scaleType="fitCenter"
+       android:src="@drawable/bill"
+       app:layout_constraintBottom_toTopOf="@+id/edu_icon"
+       app:layout_constraintEnd_toStartOf="@+id/food_icon"
+       app:layout_constraintHorizontal_bias="0.0"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toTopOf="parent"
+       app:layout_constraintVertical_bias="1.0" />
+
+   <ImageButton
+       android:id="@+id/fuel_icon"
+       android:layout_width="83dp"
+       android:layout_height="83dp"
+       android:layout_marginEnd="44dp"
+       android:layout_marginBottom="44dp"
+       android:backgroundTint="@color/white"
+       android:contentDescription="@string/add_fuel"
+       android:scaleType="fitCenter"
+       android:src="@drawable/fuel"
+       app:layout_constraintBottom_toTopOf="@+id/hospital_icon"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintHorizontal_bias="0.936"
+       app:layout_constraintStart_toEndOf="@+id/edu_icon"
+       app:layout_constraintTop_toBottomOf="@+id/food_icon"
+       app:layout_constraintVertical_bias="0.96" />
+
+   <ImageButton
+       android:id="@+id/hospital_icon"
+       android:layout_width="83dp"
+       android:layout_height="83dp"
+       android:backgroundTint="@color/white"
+       android:contentDescription="@string/add_bill"
+       android:scaleType="fitCenter"
+       android:src="@drawable/hospital"
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintHorizontal_bias="0.53"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toTopOf="parent"
+       app:layout_constraintVertical_bias="0.825" />
+
+   <ImageButton
+       android:id="@+id/food_icon"
+       android:layout_width="83dp"
+       android:layout_height="83dp"
+       android:layout_marginTop="80dp"
+       android:layout_marginEnd="48dp"
+       android:backgroundTint="@color/white"
+       android:contentDescription="@string/add_education"
+       android:scaleType="fitCenter"
+       android:src="@drawable/food"
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintTop_toBottomOf="@+id/editTextNumber"
+       app:layout_constraintVertical_bias="0.013" />
+
+   <ImageButton
+       android:id="@+id/edu_icon"
+       android:layout_width="83dp"
+       android:layout_height="83dp"
+       android:layout_marginBottom="44dp"
+       android:backgroundTint="@color/white"
+       android:contentDescription="@string/add_fuel"
+       android:scaleType="fitCenter"
+       android:src="@drawable/education"
+       app:layout_constraintBottom_toTopOf="@+id/hospital_icon"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintHorizontal_bias="0.277"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toTopOf="parent"
+       app:layout_constraintVertical_bias="0.995" />
+
+   <TextView
+       android:id="@+id/income"
+       android:layout_width="104dp"
+       android:layout_height="40dp"
+       android:layout_marginStart="50dp"
+       android:layout_marginTop="48dp"
+       android:layout_marginEnd="50dp"
+       android:layout_marginBottom="25dp"
+       android:text="@string/enter_income"
+       android:textColor="@color/theme"
+       android:textColorLink="@color/theme"
+       android:textSize="24sp"
+       app:layout_constraintBottom_toTopOf="@+id/editTextNumber"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintHorizontal_bias="0.498"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toTopOf="parent" />
+
+   <EditText
+       android:id="@+id/editTextNumber"
+       android:layout_width="152dp"
+       android:layout_height="48dp"
+       android:layout_marginStart="50dp"
+       android:layout_marginTop="32dp"
+       android:layout_marginEnd="50dp"
+       android:layout_marginBottom="76dp"
+       android:ems="10"
+       android:foregroundTint="@color/theme"
+       android:hint="ENTER INCOME"
+       android:inputType="number"
+       android:textColorHint="@color/theme"
+       app:layout_constraintBottom_toTopOf="@+id/bill_icon"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toBottomOf="@+id/income" />
+
+
+   <ImageButton
+       android:id="@+id/category"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:backgroundTint="@color/white"
+       android:contentDescription="@string/add_food"
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toTopOf="parent"
+       app:layout_constraintVertical_bias="0.974"
+       app:srcCompat="@drawable/baseline_category_24" />
+
+   <ImageButton
+       android:id="@+id/home"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginStart="40dp"
+       android:backgroundTint="@color/white"
+       android:contentDescription="@string/add_bill"
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintEnd_toStartOf="@+id/category"
+       app:layout_constraintHorizontal_bias="0.036"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toTopOf="parent"
+       app:layout_constraintVertical_bias="0.974"
+       app:srcCompat="@drawable/baseline_home_24" />
+
+   <ImageButton
+       android:id="@+id/notification"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:backgroundTint="@color/white"
+       android:contentDescription="@string/add_bill"
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintHorizontal_bias="0.524"
+       app:layout_constraintStart_toEndOf="@+id/category"
+       app:layout_constraintTop_toTopOf="parent"
+       app:layout_constraintVertical_bias="0.974"
+       app:srcCompat="@drawable/baseline_notifications_24" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
